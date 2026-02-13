@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreya Gawde | Portfolio</title>
+    <meta
+      name="description"
+      content="Interactive personal portfolio for Shreya Gawde with a dark-academia cyber-intellectual aesthetic."
+    />
+
+    <!-- Elegant typography pairing for premium + readable vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Parallax background layers -->
+    <div class="bg-layer bg-layer-one" aria-hidden="true"></div>
+    <div class="bg-layer bg-layer-two" aria-hidden="true"></div>
+    <div class="texture" aria-hidden="true"></div>
+
+    <!-- Sticky navigation with smooth-scroll targets -->
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a class="brand" href="#top">Shreya Gawde</a>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Dark mode toggle -->
+        <label class="theme-switch" for="themeToggle">
+          <input id="themeToggle" type="checkbox" />
+          <span class="slider"></span>
+          <span class="switch-label">Theme</span>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section with portrait, animated title and CTA -->
+      <section class="hero container section" id="about">
+        <div class="hero-media reveal">
+          <!-- Uses hosted profile image link -->
+          <img
+            src="https://res.cloudinary.com/djqfjrdai/image/upload/f_auto,q_auto,w_600/v1771003739/ChatGPT_Image_Feb_12_2026_03_32_00_AM_oqwj2y.png"
+            alt="Professional portrait of Shreya Gawde"
+            class="portrait"
+          />
+        </div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">The Real Evil • Creative Precision</p>
+          <h1 class="animated-title">Shreya Gawde</h1>
+          <p class="tagline">
+            Educational creator, visual storyteller, and cyber-intellectual young builder crafting polished work that
+            blends clarity, culture, and character.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Work</a>
+            <!-- CV button uses hosted Google Drive PDF link -->
+            <a
+              href="https://drive.google.com/file/d/1PMCuBegxwtqpWnoBDzwujriI4VakBJa9/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-outline"
+              >View CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Education section with interactive external-link cards -->
+      <section class="container section" id="education">
+        <div class="section-head reveal">
+          <h2>Education</h2>
+          <p>Academic foundations that shaped my discipline, creativity, and execution speed.</p>
+        </div>
+
+        <div class="edu-grid">
+          <a class="edu-card reveal" href="https://www.narayanajuniorcolleges.com/" target="_blank" rel="noreferrer">
+            <h3>Narayana Junior College</h3>
+            <p>Current higher-secondary journey focused on science, structure, and consistency.</p>
+            <span class="card-link">Visit Official Site →</span>
+          </a>
+
+          <a
+            class="edu-card reveal"
+            href="https://pawarpublicschool.com/kandivali/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h3>Pawar Public School, Kandivali</h3>
+            <p>Where I developed strong fundamentals in academics, communication, and leadership.</p>
+            <span class="card-link">Visit Official Site →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Animated skill bars -->
+      <section class="container section" id="skills">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p>Core capabilities with scroll-triggered animated proficiency bars.</p>
+        </div>
+
+        <div class="skills-wrap reveal">
+          <div class="skill-row"><span>Canva</span><div class="bar"><i data-level="95"></i></div></div>
+          <div class="skill-row"><span>DaVinci Resolve</span><div class="bar"><i data-level="86"></i></div></div>
+          <div class="skill-row"><span>Lightroom</span><div class="bar"><i data-level="88"></i></div></div>
+          <div class="skill-row"><span>Typing (60+ WPM)</span><div class="bar"><i data-level="90"></i></div></div>
+          <div class="skill-row"><span>Curriculum Design</span><div class="bar"><i data-level="92"></i></div></div>
+          <div class="skill-row"><span>Research</span><div class="bar"><i data-level="89"></i></div></div>
+          <div class="skill-row"><span>Cross-cultural Collaboration</span><div class="bar"><i data-level="87"></i></div></div>
+          <div class="skill-row"><span>Communication</span><div class="bar"><i data-level="93"></i></div></div>
+        </div>
+      </section>
+
+      <!-- Projects / OSINT conference spotlight -->
+      <section class="container section" id="projects">
+        <div class="section-head reveal">
+          <h2>OSINT Conference Involvement</h2>
+          <p>Creative design + communication support for international virtual conference storytelling.</p>
+        </div>
+
+        <article class="osint-card reveal">
+          <h3>OSINTCON Ambition</h3>
+          <p>
+            Contributed visual identity work, digital assets, and social communications that translated complex ideas
+            into clear, engaging conference narratives.
+          </p>
+          <a href="https://osintconference.com/" target="_blank" rel="noreferrer" class="btn btn-flicker"
+            >Access OSINT Portal</a
+          >
+        </article>
+      </section>
+
+      <!-- Contact section -->
+      <section class="container section" id="contact">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p>If you want structured creative output with strong storytelling, let’s connect.</p>
+        </div>
+
+        <div class="contact-panel reveal">
+          <a href="mailto:shreyagawde25@gmail.com">shreyagawde25@gmail.com</a>
+          <a href="https://www.linkedin.com/in/shreya-gawde-739811258/" target="_blank" rel="noreferrer"
+            >LinkedIn Profile</a
+          >
+          <a href="https://github.com/shreyagawde25" target="_blank" rel="noreferrer">GitHub Profile</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating social dock -->
+    <aside class="social-dock" aria-label="social links">
+      <a href="https://www.linkedin.com/in/shreya-gawde-739811258/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M6.94 8.5H3.56V20h3.38V8.5Zm.22-3.55A1.96 1.96 0 0 0 5.2 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 1.96-1.97ZM20.44 13.4c0-3.48-1.85-5.1-4.32-5.1-1.98 0-2.87 1.1-3.37 1.87V8.5H9.37V20h3.38v-5.68c0-1.5.28-2.95 2.14-2.95 1.84 0 1.86 1.72 1.86 3.05V20h3.38v-6.6Z" />
+        </svg>
+      </a>
+      <a href="https://github.com/shreyagawde25" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.08 3.29 9.39 7.86 10.92.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.54-3.87-1.54-.52-1.32-1.28-1.67-1.28-1.67-1.04-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.02 1.77 2.69 1.25 3.34.95.1-.75.4-1.25.72-1.54-2.55-.3-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.19-3.11-.12-.3-.52-1.5.11-3.13 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.79 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.63.24 2.83.12 3.13.75.81 1.19 1.85 1.19 3.11 0 4.43-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.18c0 .31.2.67.8.55a11.53 11.53 0 0 0 7.84-10.91C23.5 5.66 18.35.5 12 .5Z"/>
+        </svg>
+      </a>
+      <a href="mailto:shreyagawde25@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.4-.5 7.6 6.1L19.6 5h-15.2Zm15.6 2.55-7.37 5.92a1 1 0 0 1-1.26 0L4 7.55V18.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V7.55Z"/>
+        </svg>
+      </a>
+    </aside>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> Shreya Gawde · Crafted with intention.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
